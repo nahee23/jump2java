@@ -6,6 +6,7 @@ import java.util.Comparator;
 
 public class Ch03_리스트 {
     public static void main(String[] args) {
+        //배열은 크기가 지정되어 있지만 리스트는 계속 추가 및 삭제 할수있다.
         //필요한 자료형 타입은 import 해준다.
         ArrayList<String> pitches = new ArrayList(); //어레이리스트 객체 생성
         //아이템을 추가할때는 add 메서드
