@@ -30,6 +30,12 @@ class Sample {
         System.out.println("나의 별명은 "+nick+" 입니다.");
     }
 
+    //메서드 안에 선언 변수 효력범위 (메서드 안에서만 사용)
+    int varTest(int a) {
+        a++;
+        return a;
+    }
+
 
 }
 
@@ -51,5 +57,9 @@ public class Ch05_메서드 {
 
             sample.sayNick("천재");
             sample.sayNick("바보"); //출력안됨
+
+            int a = 1;
+            a = sample.varTest(a);
+            System.out.println(a);
     }
 }
