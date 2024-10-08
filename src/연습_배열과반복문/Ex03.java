@@ -16,19 +16,17 @@ public class Ex03 {
     private static int[] merge(int[] evens, int[] odds) {
         int[] mergeArr = new int[evens.length+odds.length];
 
-        for (int i = 0; i < evens.length; i++) {
-            for (int j = 0; j < 2; j++) {
-                if(j==0){
-                    mergeArr[i] = evens[j];
-                } else if (j==1) {
-                    mergeArr[i] = odds[j];
-                }
+        for (int i = 0; i < 10; i++) {
+            if (i==0) {
+                mergeArr[i] = evens[i];
+            } else if (i%2==0 && i!=0){
+                mergeArr[i] = evens[i/2];
+            } else {
+                mergeArr[i] = odds[i/2];
             }
 
-
-           }
-        return mergeArr;
-        }
+            } return mergeArr;
+    }
 
 
 }
