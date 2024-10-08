@@ -18,6 +18,14 @@ public class Ex08 {
             if (scores[i] > max) {
                 max = scores[i];
             }
+
+            /*
+                int index = 0;
+		        for (int i = 0, temp = 0; i < arr.length; i++) {
+			           if (arr[i] > temp) {
+				               temp = arr[i];
+				               index = i;
+            */
         } int gap = Arrays.binarySearch(scores, max);
         return gap;
     }

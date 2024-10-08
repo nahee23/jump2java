@@ -25,6 +25,13 @@ public class Ex03 {
                 mergeArr[i] = odds[i/2];
             }
 
+            /*
+                for (int i = 0; i < evens.length; i++) {
+                        mergeArr[i*2] = evens[i];
+                        mergeArr[i*2+1] == odds[i];
+                }
+            */
+
             } return mergeArr;
     }
 

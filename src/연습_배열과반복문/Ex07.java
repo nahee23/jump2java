@@ -21,6 +21,10 @@ public class Ex07 {
         }
     }
 
+    /*Math.pow => 제곱 함수
+      for (int i =0; i < bacteriaCountLogs.length; i++) {
+            bacteriaCountLogs[i] = (int) Math.pow(2, i) */
+
     private static void printLog(int[] arr) {
         System.out.printf("[");
         for (int i = 0; i < arr.length; i++) {
