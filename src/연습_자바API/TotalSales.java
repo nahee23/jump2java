@@ -12,6 +12,8 @@ public class TotalSales {
         store.add(kim);
         store.add(don);
         store.add(neg);
+
+        System.out.printf("총 매출: %d원",store.totalSales());
     }
 }
 class Store{
