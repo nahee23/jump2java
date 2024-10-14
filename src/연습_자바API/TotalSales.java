@@ -32,10 +32,10 @@ class Store{
         int c_sum = 0;
         for (int i = 0; i < list.size() ; i++) {
             Menu a = list.get(i);
-            p_sum += a.getPrice();
-            c_sum += a.getCount();
+            p_sum = a.getPrice() * a.getCount();
+            c_sum += p_sum;
         }
-        return p_sum * c_sum ;
+        return c_sum ;
     }
 }
 class Menu{
