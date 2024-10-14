@@ -26,43 +26,27 @@ class Currency {
 
     @Override
     public String toString() {
-        return String.format(" %.2f %s" ,price, won);
-    }
+        return String.format("%s: %.2f %s", getClass().getSimpleName() ,price, won);
+    } //getClass().getSimpleName() = 클래스 이름 가져오기?
 }
 
 class KRW extends Currency {
     public KRW(double price, String won) {
         super(price, won);
     }
-    @Override
-    public String toString() {
-        return String.format("KRW: %.2f %s" ,price, won);
-    }
 }
 class USD extends Currency {
     public USD(double price, String won) {
         super(price, won);
-    }
-    @Override
-    public String toString() {
-        return String.format("USD: %.2f %s",price, won);
     }
 }
 class EUR extends Currency {
     public EUR(double price, String won) {
         super(price, won);
     }
-    @Override
-    public String toString() {
-        return String.format("EUR: %.2f %s" ,price, won);
-    }
 }
 class JPY extends Currency {
     public JPY(double price, String won) {
         super(price, won);
-    }
-    @Override
-    public String toString() {
-        return String.format("JPY: %.2f %s",price, won);
     }
 }
